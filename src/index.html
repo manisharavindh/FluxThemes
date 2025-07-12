@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluxThemes</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="../icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="./img/fluxthemes.png" alt="">
+            <h1>FluxThemes</h1>
+        </div>
+        <div class="edit">
+            <h2>Edit Theme</h2>
+            <div class="theme-form">
+                <div class="form-section">
+                    <h3>Basic Settings</h3>
+                    <label>Theme Name:</label>
+                    <input type="text" id="themeName" placeholder="Enter theme name"><br>
+
+                    <label>Frame:</label>
+                    <input type="color" id="frameColor" value="#1c1b22"><br>
+
+                    <label>Toolbar:</label>
+                    <input type="color" id="toolbarColor" value="#2b2a33"><br>
+
+                    <label>Text:</label>
+                    <input type="color" id="textColor" value="#fbfbfe"><br>
+                </div>
+
+                <div class="form-section">
+                    <h3>Additional Colors</h3>
+                    <label>Tab Background:</label>
+                    <input type="color" id="tabBackgroundColor" value="#2b2a33"><br>
+
+                    <label>Tab Text:</label>
+                    <input type="color" id="tabTextColor" value="#fbfbfe"><br>
+
+                    <label>Toolbar Field:</label>
+                    <input type="color" id="toolbarFieldColor" value="#1c1b22"><br>
+
+                    <label>Toolbar Field Text:</label>
+                    <input type="color" id="toolbarFieldTextColor" value="#fbfbfe"><br>
+
+                    <label>Bookmark Text:</label>
+                    <input type="color" id="bookmarkTextColor" value="#fbfbfe"><br>
+                </div>
+
+                <div class="form-section">
+                    <h3>Accent Colors</h3>
+                    <label>Accent Color:</label>
+                    <input type="color" id="accentColor" value="#0061e0"><br>
+
+                    <label>Popup Text:</label>
+                    <input type="color" id="popupTextColor" value="#fbfbfe"><br>
+
+                    <label>Popup Background:</label>
+                    <input type="color" id="popupBackgroundColor" value="#2b2a33"><br>
+
+                    <label>Sidebar Background:</label>
+                    <input type="color" id="sidebarColor" value="#2b2a33"><br>
+                </div>
+
+                <div class="button-group">
+                    <button id="saveTheme">Save Theme</button>
+                    <button id="apply">Apply Theme</button>
+                    <button id="reset">Reset Theme</button>
+                </div>
+            </div>
+        </div>
+        <div class="saved-themes">
+            <h2>Saved Themes</h2>
+            <div id="themesList"></div>
+        </div>
+        <div class="footer">
+            <div class="name">
+                <img src="./img/fluxthemes.png" alt="">
+                <h3>FluxThemes</h3>
+            </div>
+            <div class="theme-actions">
+                <button id="importTheme">Import</button>
+                <button id="exportThemes">Export</button>
+                <input type="file" id="themeImport" accept=".json" style="display: none;">
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
